@@ -1,24 +1,12 @@
 body{
     background: orange;
 }
-/* .pright{
-    text-align: right !important;
-} */
-.nav-link{
-    color:#74353F !important;
-    font-weight: bold;
-}
-.nav-link:hover{
-    color:#24040a !important;
-}
 .toparea{
     background: #B65651;
+    height: 45px;
     padding: 10px 0;
     color: #fff;
     text-align: center;
-}
-.toparea p{
-    margin: 0;
 }
 .titlearea{
     background: #F2C38B;
@@ -28,10 +16,6 @@ body{
     font-size: 20px;
    
     color: #74353F;
-}
-.titlearea img{
-    width:120px;
-    margin:0 auto;
 }
 .heading{
     font-size: 40px;
@@ -43,14 +27,14 @@ body{
     color: #000;
     font-weight: 500;
 }
-
-.menuarea{
-    background: #F8F9FA;
+.col-3 img{
+    height: 120px;
+    width: 120px;
+}
+.menubar{
+    background: #fff;
     word-spacing: 15px;
     text-align: center;
-}
-.navbar ul{
-    margin:0 auto;
 }
 .slidearea{
     background: #fff;
@@ -61,10 +45,6 @@ body{
     text-align: center;
     padding-top: 70px;
 }
-/* .principal-message img{
-    width:100%;
-    height: auto;
-} */
 .principal-message .row .col-5 {
     margin-left: -100px;
 }
@@ -72,25 +52,23 @@ h1{
     font-size: 25px;
 }
 .principal-message p{
-    text-align: justify;  
+    text-align: justify;
+    
 }
-.principal-message p:last-child{
-    text-align: right;  
-}
-/* .mr{
+.mr{
     padding-left: 515px;
     font-weight: bold;
 }
 .prince{
     padding-left: 520px;
-} */
+}
 .course{
     /*background-image: url("parallax.jpg");*/
-    background-image:linear-gradient( rgb(255,255,255,0.8), rgb(255,255,255,0.8)), url("parallax.jpg");
+    background: lightgrey;
     text-align: center;
     padding-top: 70px;
     padding-bottom: 70px;
-    background-attachment:fixed;
+    background-attachment: local;
 }
 .course .box{
     background: #fff;
@@ -129,13 +107,19 @@ h6 a{
     color: brown;
 }
 .footer{
-    background: #1A1A1A url("https://gpadp.org.in/micro_carbon.cfa0758c9310a463.png");
+    background-color: #1A1A1A;
     padding: 50px 0;
     padding: 40px 0;
 }
-
-
-.footer h4{
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-col{
+    width: 22%;
+    
+}
+.footer-col h4{
     font-size: 18px;
     color: #fff;
     
@@ -143,7 +127,7 @@ h6 a{
     font-weight: 500;
     position: relative;
 }
-.footer h4::before{
+.footer-col h4::before{
     content:'';
     position:absolute;
     left: 0;
@@ -153,12 +137,14 @@ h6 a{
     box-sizing: border-box;
     width: 50px;
 }
-
-.footer ul li :not(:last-child){
+.footer-col ul{
+    line-height: 30px;
+}
+.footer-col ul li :not(:last-child){
     margin-bottom: 10px;
     
 }
-.footer ul li a{
+.footer-col ul li a{
     font-size: 16px;
     color: #D37F54;
     text-decoration: none;
@@ -168,7 +154,7 @@ h6 a{
     transition: all 0.9s ease;
     
 }
-.footer ul li a:hover{
+.footer-col ul li a:hover{
     color: #fff;
    
 }
@@ -205,13 +191,9 @@ iframe{
     font-size: 16px;
     font-weight: 400;
     color: #fff;
+    border-top: 2px solid rgba(252, 250, 250, 0.5);
     padding-top: 15px;
 }
 i{
     font-size: 17px; 
-}
-.aline{
-    width: 100%;
-    height:1px;
-    background: linear-gradient(to right, transparent, white, transparent);
 }
